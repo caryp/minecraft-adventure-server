@@ -1,0 +1,3 @@
+data/mc/*
+!data/mc/server.properties
+!data/mc/plugins/Shopkeepers/config.yml
