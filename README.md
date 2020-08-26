@@ -1,6 +1,6 @@
-# Colton's Minecraft Adventure Server
+# The Penniman's Minecraft Server
 
-This project is for a Webelos Cub Scout elective called "Game Design".  We are trying to create a game that will allow players to quest for items then trade those items for clues on how to complete the next step of the game.  It seems like the shopkeepers plugin might help with this.
+This project started as a Webelos Cub Scout elective called "Game Design".  We are trying to create a game that will allow players to quest for items then trade those items for clues on how to complete the next step of the game.  It seems like the shopkeepers plugin might help with this.
 
 This server is based on what seems to be the very cool [docker-minecraft-server](https://github.com/itzg/docker-minecraft-server) project by [Itzg](https://github.com/itzg).
 
