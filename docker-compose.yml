@@ -10,7 +10,7 @@ services:
       - "./data/mc:/data"
     environment:
       EULA: "TRUE"
-      TYPE: "BUKKIT"
+      TYPE: "PAPER"
       ENABLE_RCON: "true"
       RCON_PASSWORD: "testing"
       RCON_PORT: 28016
@@ -18,18 +18,19 @@ services:
       REPLACE_ENV_VARIABLES: "TRUE"
       # define an optional prefix for your env variables you want to replace
       ENV_VARIABLE_PREFIX: "CFG_"
-      # # and here are the actual variables
-#       CFG_DB_HOST: "http://localhost:3306"
-#       CFG_DB_NAME: "minecraft"
-#       CFG_DB_PASSWORD_FILE: "/run/secrets/db_password"
+      # and here are the actual variables
+      CFG_DB_HOST: "http://localhost:3306"
+      CFG_DB_NAME: "minecraft"
+      CFG_DB_PASSWORD_FILE: "/run/secrets/db_password"
     restart: always
-  # rcon:
-  #   image: itzg/rcon
-  #   ports:
-  #     - "4326:4326"
-  #     - "4327:4327"
-  #   volumes:
-  #     - "rcon:/opt/rcon-web-admin/db"
+  rcon:
+    image: itzg/rcon
+    ports:
+      - "4326:4326"
+      - "4327:4327"
+    volumes:
+      - "./data/rcon:/opt/rcon-web-admin/db"
+#      - "rcon:/opt/rcon-web-admin/db"
 
 # volumes:
 #   mc: "./data/mc"

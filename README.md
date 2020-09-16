@@ -24,6 +24,11 @@ to stop server:
 
     docker-compose down
 
+## RCON
+
+RCON is enabled by default, so you can exec into the container to access the Minecraft server console:
+
+    docker exec -i mc rcon-cli
 
 ## TODO
 
