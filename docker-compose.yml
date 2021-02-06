@@ -28,6 +28,8 @@ services:
     ports:
       - "4326:4326"
       - "4327:4327"
+    environment:
+      RWA_PASSWORD: passw0rd
     volumes:
       - "./data/rcon:/opt/rcon-web-admin/db"
 #      - "rcon:/opt/rcon-web-admin/db"
